@@ -5,7 +5,7 @@ ROS2 (Humble) Package that publish GPS Data from a Teltonika router (tested with
 ### 1.) Build from source: 
 Put the files inside a ros workspace, in the src folder: 
 ```bash
-git clone 
+git clone https://github.com/TKL01/Teltonika-GPS-forwarding-via-HTTP-for-ROS2.git
 ```
 then build outside of the src folder:
 ```bash

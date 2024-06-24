@@ -1,5 +1,5 @@
 # Teltonika-GPS-forwarding-via-HTTP-for-ROS2
-ROS2 (Humble) Package that publish GPS Data from a Teltonika router (tested with RUT50x) via HTTP forwarding
+ROS2 (Humble) Package that publishes GPS Data from a Teltonika router (tested with RUT50x) via HTTP forwarding
 
 ## How to run it
 ### 1.) Build from source: 

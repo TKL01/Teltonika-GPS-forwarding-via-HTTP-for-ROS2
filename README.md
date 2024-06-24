@@ -1,7 +1,13 @@
 # Teltonika-GPS-forwarding-via-HTTP-for-ROS2
 ROS2 (Humble) Package that publishes GPS Data from a Teltonika router (tested with RUT50x) via HTTP forwarding
 
+
 ## How to run it
+
+Install Python library for the NMEA 0183 protcol:
+```bash
+pip install pynmea2
+```
 ### 1.) Build from source: 
 Put the files inside a ros workspace, in the src folder: 
 ```bash

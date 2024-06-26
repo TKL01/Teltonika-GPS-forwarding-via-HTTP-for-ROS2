@@ -7,8 +7,8 @@ import os
 class GPSPublisher(Node):
     def __init__(self):
         super().__init__('gps_publisher')
-        self.publisher_ = self.create_publisher(NavSatFix, 'gps_data', 10)
-        self.timer = self.create_timer(2.0, self.timer_callback)  # Alle 2 Sekunden
+        self.publisher_ = self.create_publisher(NavSatFix, 'gps_data', 10)      # /gps_data topic
+        self.timer = self.create_timer(2.0, self.timer_callback)  # send every 2s
 
     def timer_callback(self):
         file_path = '/tmp/gps_data.nmea'
@@ -18,7 +18,7 @@ class GPSPublisher(Node):
                 for line in nmea_data.splitlines():
                     try:
                         msg = pynmea2.parse(line)
-                        if isinstance(msg, pynmea2.types.talker.GGA):  # GGA-Nachricht enthält GPS-Daten
+                        if isinstance(msg, pynmea2.types.talker.GGA):  # GGA message contains GPS data
                             navsat_msg = NavSatFix()
                             navsat_msg.header.stamp = self.get_clock().now().to_msg()
                             navsat_msg.header.frame_id = 'gps'

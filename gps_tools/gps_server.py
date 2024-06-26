@@ -5,12 +5,12 @@ class GPSHandler(BaseHTTPRequestHandler):
         content_length = int(self.headers['Content-Length'])
         post_data = self.rfile.read(content_length).decode('utf-8')
 
-        # Ausgabe der empfangenen Daten zur Überprüfung
+        # Output of received data 
         print(f"Headers: {self.headers}")
         print(f"Body: {post_data}")
 
         try:
-            # Speichern der empfangenen NMEA-Daten in einer Datei
+            # temporarly store NMEA data in a file
             with open('/tmp/gps_data.nmea', 'w') as file:
                 file.write(post_data)
             self.send_response(200)

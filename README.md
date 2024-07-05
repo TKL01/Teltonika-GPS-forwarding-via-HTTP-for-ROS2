@@ -25,7 +25,7 @@ source ~/ros2_ws/install/setup.bash
 Enable GPS and NMEA:
 ![image](https://github.com/TKL01/Teltonika-GPS-forwarding-via-HTTP-for-ROS2/assets/120031026/664553bd-0a30-4548-8cb5-aa9c5486c52c)
 
-Set HTTP Server Settings. Put in your machine's IP, the default port is :3000 (can be changed in     
+Set HTTP Server Settings. Put in your machine's IP, the default port is **:3000** (can be changed in     
 Teltonika-GPS-forwarding-via-HTTP-for-ROS2/gps_tools/gps_server.py) and the forwarding Interval:
 ![Screenshot from 2024-06-24 15-30-19](https://github.com/TKL01/Teltonika-GPS-forwarding-via-HTTP-for-ROS2/assets/120031026/73be206e-e723-4fb7-9888-8d424efe23a8)
 

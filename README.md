@@ -9,7 +9,7 @@ Install Python library for the NMEA 0183 protocol:
 pip install pynmea2
 ```
 ### 1.) Build from source: 
-Put the files inside a ros workspace, in the src folder: 
+Put the files inside a ros workspace, in the src folder **OR** just create a new folder and inside the folder create another one called src and clone the repo: 
 ```bash
 git clone https://github.com/TKL01/Teltonika-GPS-forwarding-via-HTTP-for-ROS2.git
 ```

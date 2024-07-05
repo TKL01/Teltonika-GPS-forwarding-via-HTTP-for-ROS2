@@ -4,7 +4,7 @@ ROS2 (Humble) Package that publishes GPS Data from a Teltonika router (tested wi
 
 ## How to run it
 
-Install Python library for the NMEA 0183 protcol:
+Install Python library for the NMEA 0183 protocol:
 ```bash
 pip install pynmea2
 ```
@@ -29,9 +29,11 @@ Set HTTP Server Settings. Put in your machine's IP, the default port is :3000 an
 ![Screenshot from 2024-06-24 15-30-19](https://github.com/TKL01/Teltonika-GPS-forwarding-via-HTTP-for-ROS2/assets/120031026/73be206e-e723-4fb7-9888-8d424efe23a8)
 
 ### 3.) Open 2 new terminals and run:
+1st terminal:
 ```bash
 ros2 run gps_tools gps_server
 ```
+2nd terminal:
 ```bash
 ros2 run gps_tools gps_publisher
 ```
